@@ -6,7 +6,7 @@ In the below a 9'th order polynomial is fitted to 10 datapoints.
 ![Alt text](l2_reg.png)
 Unsurprisingly, the unregularized fit matches the datapoints very well, but it is too wiggly to be a plausible target function. Applying a slight penalty $\lambda=0.1$ to the size of the parameters $w_0\dots w_9$ in the ridge optimization problem
 $$
-\text{argmin}_\mathbf{w} \sum_{i=1}^n \left(f(x) -y_i\right) + \lambda \|\mathbf{w}\|_2^2
+\text{argmin}_{\mathbf{w}}\sum_{i=1}^n \left(f(x) - y_i\right) + \lambda \|\mathbf{w}\|_2^2
 $$
 
 yields a much better solution despite the flexibility of the 9'th order polynomial function-class 
